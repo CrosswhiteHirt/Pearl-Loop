@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pearl Loop - Logic Puzzle Game</title>
+  <meta name="description" content="Pearl Loop is a calm offline logic puzzle game about drawing one continuous path through black and white pearls.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3e8;
+      --ink: #111820;
+      --muted: #5c625e;
+      --line: #d9d1bf;
+      --accent: #16879b;
+      --panel: rgba(255, 255, 255, 0.78);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(180deg, rgba(247, 243, 232, 0.08), rgba(247, 243, 232, 0.92)),
+        url("web/images/hero.jpg") center / cover no-repeat;
+      padding: 72px 24px;
+    }
+    .hero-inner, main, footer {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(48px, 8vw, 108px);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 680px;
+      margin: 0;
+      font-size: clamp(18px, 2.4vw, 26px);
+      color: var(--muted);
+    }
+    main { padding: 48px 24px 72px; }
+    section { margin-top: 56px; }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .feature {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .feature h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .feature p { margin: 0; color: var(--muted); }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      align-items: start;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(17, 24, 32, 0.12);
+      background: #fff;
+    }
+    .copy {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .cta {
+      display: inline-flex;
+      margin-top: 18px;
+      color: white;
+      background: var(--accent);
+      border-radius: 8px;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    footer {
+      padding: 32px 24px 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+    footer a { color: var(--ink); }
+    @media (max-width: 840px) {
+      .features { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Pearl Loop</h1>
+      <p class="lead">A quiet logic puzzle about black pearls, white pearls, and one elegant continuous path.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Draw the Perfect Loop</h2>
+      <p class="copy">
+        Pearl Loop is an offline puzzle game inspired by classic loop logic. Each board asks you to draw a single closed path through the grid while respecting the special rules of black and white pearls. It starts gently, then grows into a satisfying test of planning, pattern recognition, and clean deduction.
+      </p>
+      <a class="cta" href="privacy.html">Privacy Policy</a>
+    </section>
+
+    <section class="features" aria-label="Game features">
+      <article class="feature">
+        <h3>50 Offline Levels</h3>
+        <p>Play anywhere with handcrafted-style generated boards that increase in complexity.</p>
+      </article>
+      <article class="feature">
+        <h3>Calm, Focused Design</h3>
+        <p>Minimal Japanese-inspired visuals, refined pearls, soft music, and clean touch controls.</p>
+      </article>
+      <article class="feature">
+        <h3>Progress and Stars</h3>
+        <p>Unlock levels, earn star ratings, use hints, and return later with progress saved locally.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Screenshots</h2>
+      <div class="gallery">
+        <img src="web/images/iphone-65-01.jpg" alt="Pearl Loop iPhone puzzle board with a completed loop" loading="lazy">
+        <img src="web/images/iphone-65-02.jpg" alt="Pearl Loop iPhone puzzle board with a compact path" loading="lazy">
+        <img src="web/images/ipad-13-01.jpg" alt="Pearl Loop iPad level one puzzle" loading="lazy">
+        <img src="web/images/ipad-13-02.jpg" alt="Pearl Loop iPad level three puzzle" loading="lazy">
+        <img src="web/images/ipad-13-03.jpg" alt="Pearl Loop iPad level four puzzle" loading="lazy">
+      </div>
+    </section>
+
+    <section>
+      <h2>For Puzzle Players</h2>
+      <p class="copy">
+        Pearl Loop is built for players who enjoy thoughtful, elegant puzzles without timers, accounts, or online requirements. The interface stays out of the way so the logic can take center stage.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:508923216@qq.com">508923216@qq.com</a></p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
